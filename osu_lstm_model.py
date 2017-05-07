@@ -47,6 +47,7 @@ model.add(Dense(3, activation='sigmoid'))
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.fit(X_test, Y_test, epochs=13, batch_size=64, verbose=1)
 model.save('D:\\tandon\\AI_for_game\\osu_project\\refined_my_model_second .h5')
+model.summary()
 '''
 X_target = X_test[0:50]
 predict = model.predict(X_target, verbose = 1)
